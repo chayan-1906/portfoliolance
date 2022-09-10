@@ -135,7 +135,9 @@ class Body extends StatelessWidget {
                                   ),
                                 ),
                               Container(
-                                height: 120.0,
+                                height: projectList[index]['image'].isNotEmpty
+                                    ? 120.0
+                                    : 0.0,
                                 child: ListView.builder(
                                   shrinkWrap: true,
                                   scrollDirection: Axis.horizontal,
@@ -143,14 +145,14 @@ class Body extends StatelessWidget {
                                   itemBuilder: (BuildContext context,
                                       int projectImageIndex) {
                                     return Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Image.asset(
-                                        projectList[index]['image']
-                                            [projectImageIndex],
-                                        fit: BoxFit.contain,
-                                        width: 100.0,
-                                      ),
-                                    );
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Image.asset(
+                                              projectList[index]['image']
+                                                  [projectImageIndex],
+                                              fit: BoxFit.contain,
+                                              width: 100.0,
+                                            ),
+                                          );
                                   },
                                 ),
                               ),

@@ -32,14 +32,15 @@ final List<Map<String, dynamic>> projectList = [
       Assets.projectImagesEcommerceProductDetailsScreen,
     ],
   },
-  /*{
+  {
     'title': 'Forest Fire Detection and Control System',
-    'subtitle': '',
+    'subtitle':
+        'The app is built for Head Office as well as Regional Office. In the main page, it will show whether the fire is detected or not. Head office will be able to sort the reg offices according to their username/email/distance. If fire is detected, the Head office can send a request to any regional office. Now the regional office may accept the request or may decline and correspondingly the UI of the head office will be changed so that head office gets to know. After extinguishing the fire at that location, the regional office has to inform the head office and simultaneously a report will be generated.',
     'project_link': '',
-    'project_icon': ,
+    'project_icon': Assets.projectImagesForestFireAppIcon,
     'play_store': '',
-    'image': ,
-  },*/
+    'image': [],
+  },
 ];
 
 bool isStringInvalid({required String text}) {
